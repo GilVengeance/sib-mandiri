@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jenis jenis layout</title>
+    <link rel="stylesheet" href="./css/inline.css">
+    <style>
+        /* global style*/
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a{
+            float:left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 2;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar, .content, aside {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header>header section</header>
+        < class="claer">
+            <nav>
+                <a href="">home</a>
+                <a href="">about</a>
+                <a href="">contact</a>
+            </nav>
+            <div>
+                <section class="sidebar">ini adalah sidebar</section>
+                <section>
+                    <section class="conten">
+                        <h2>Main content Area</h2>
+                        <p>ini adalah bagian content</p>
+                </section>
+                <aside class="block-elemen"></aside>
+            </div>
+
+      <footer class="block-elemen">ini adalah bagaian footer</footer>
+</body>
+</html>
