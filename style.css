@@ -1,0 +1,29 @@
+/* Selector Tag */
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+   }
+   /* Selector Class */
+   .container {
+    border-radius: 5px;
+   }
+   /* Selector ID */
+   #judul {
+    font-weight: bold;
+   }
+   /* Selector Class untuk Tombol */
+   .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+   }
+   .btn:hover {
+    opacity: 0.8;
+   }
